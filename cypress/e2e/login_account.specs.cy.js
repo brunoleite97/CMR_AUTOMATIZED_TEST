@@ -2,8 +2,8 @@
 
 describe('Access', () => {
     it('login account', () => {
-      cy.fixture('user.json').then((json) => {
-        json.forEach((data, index) => {
+      cy.fixture('user\\user.json').then((json) => {
+        json.forEach((data) => {
           cy.visit(Cypress.env('baseUrl') + '/login');
           cy.viewport(1920, 1080);
 

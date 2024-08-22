@@ -2,7 +2,7 @@
 
 describe('register', () => {
   it('create account', () => {
-    cy.fixture('user.json').then((json) => {
+    cy.fixture('user\\user.json').then((json) => {
       const url = Cypress.env('baseUrl');
       json.forEach((data, index) => {
         
