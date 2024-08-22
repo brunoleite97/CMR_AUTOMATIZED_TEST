@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "cy:testar": "npm run allure:test",
+    "allure:test": "npm run allure:clear && npm run cy:headless && npm run report:allure",
+    "cy:headless": "cypress run --env allure=true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 "keywords": [],
